@@ -1,7 +1,7 @@
 (ns aot-repro.main
   (:require
-   [clojure.tools.logging :refer (infof)]
-   [aot-repro.macros :refer (with-log)]))
+   [clojure.tools.logging :refer (infof)]))
 
 (defn -main [& args]
-  (with-log (+ 1 1)))
+  (infof "starting")
+  (+ 1 1))
